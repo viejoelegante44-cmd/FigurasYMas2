@@ -1,0 +1,30 @@
+#cajas {  
+    position: relative;
+    width: 100%;
+    height: 22%; /* proporcional al alto total visible, puedes ajustar */
+    display: flex; /* mejor que float */
+    justify-content: space-between; /* espacio entre cajas */
+}
+
+.caja {
+    background-color: brown;
+    width: 32%; /* tres cajas en fila con un pequeño espacio entre ellas */
+    height: 200px; /* puedes mantenerlo fijo o usar porcentaje si el contenedor tiene altura fija */
+    margin-right: 1%; /* espacio entre cajas */
+}
+
+/* Evitar que la última tenga margen extra */
+.caja:last-child {
+    margin-right: 0;
+}
+
+#caja1, #caja2, #caja3 {
+    background-color: rgb(29, 210, 38);
+    background-size: 100% 100%; /* adapta la imagen al tamaño del contenedor */
+}
+
+#final {
+    width: 100%;
+    background-color: blue;
+    height: 4%; /* altura relativa, o usa algo como 40px si prefieres fijo */
+}
